@@ -11,9 +11,9 @@ def ussd_callback():
     
     global resp
     if text == '':
-        resp  =  "CON Welcome to DigiHealth ussd platform \n"
-        resp += "1. My Hospital \n"
-        resp += "2. My Patient_id"
+        resp  =  "CON What would you want to check \n"
+        resp += "1. My Account \n"
+        resp += "2. My Phone Number"
     elif text == '1':
         resp = "CON Choose account information you want to view \n"
         resp += "1. Account number \n"
@@ -30,6 +30,3 @@ def ussd_callback():
     
 if __name__ == '__main__':
     app.run(debug=True, port="2000")
-
-
-##6642528084b46a009b74797c5a74299572ba38a3d30d627661b3b8e23db73146
