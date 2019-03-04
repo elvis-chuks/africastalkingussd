@@ -1,7 +1,7 @@
 # Your code here 
 from flask import Flask, request
 app = Flask(__name__)
-resp = ""
+resp = "CON "
 @app.route('/', methods=['POST', 'GET'])
 def ussd_callback():
     session_id = request.values.get("sessionId", None)
