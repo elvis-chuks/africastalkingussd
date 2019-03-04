@@ -25,7 +25,7 @@ def ussd_callback():
     elif text == '2':
         response = "END Your number is " + phone_number
         return response
-    return "END Your number is"
+    
 if __name__ == '__main__':
     app.run(debug=True, port="2000")
 
