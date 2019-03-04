@@ -1,14 +1,14 @@
 # Your code here 
 from flask import Flask, request
 app = Flask(__name__)
-resp = "CON "
+resp = "CON"
 @app.route('/', methods=['POST', 'GET'])
 def ussd_callback():
     session_id = request.values.get("sessionId", None)
     service_code = request.values.get("serviceCode", None)
     phone_number = request.values.get("phoneNumber", None)
     text = request.values.get("text", "default")
-    #i = input('text')
+    
     global resp
     if text == ' ':
         resp  =  "CON What would you want to check \n"
