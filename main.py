@@ -22,6 +22,12 @@ def ussd_callback():
     elif text == '1*2':
         balance  = "KES 10,000"
         response = "END Your balance is " + balance
-    return response
+    elif text == '2':
+        response = "END Your number is " + phone_number
+        return response
+    return "END Your number is"
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug=True, port="2000")
+
+
+##6642528084b46a009b74797c5a74299572ba38a3d30d627661b3b8e23db73146
