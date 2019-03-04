@@ -11,9 +11,9 @@ def ussd_callback():
     #i = input('text')
     global resp
     if text == ' ':
-        resp  =  "CON What would you want to check \n"
-        resp += "1. My Account \n"
-        resp += "2. My phone number"
+        resp  =  "CON Welcome to digihealth \n"
+        resp += "1. My Hospital \n"
+        resp += "2. My patient id"
     elif text == '1':
         resp = "CON Choose account information you want to view \n"
         resp += "1. Account number \n"
